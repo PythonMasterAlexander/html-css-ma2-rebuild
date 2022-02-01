@@ -1,0 +1,167 @@
+/*Css reset build a scrolling menu like they have on this address https://www.treningsforum.no/php/art.php?id=4340*/
+html, body, div, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/*Page layout*/
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+header {
+  background-color: lightblue;
+  padding-top: 1em;
+  min-height: 150%;
+  padding-bottom: 25px;
+}
+
+
+nav {
+  text-align: left;
+  margin-top: 50px;
+}
+
+a {
+  color: darkblue;
+  text-decoration: solid darkblue 2px;
+  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h1 {
+  color: darkblue;
+  margin-left: 12%;
+  margin-top: 18px;
+  display: inline-block;
+  font-family: 'impact';
+  font-size: 4.5em;
+}
+
+h2 {
+  font-family: 'impact';
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  border-bottom: solid 2.5px darkblue;
+  padding-bottom: 5px;
+}
+
+h3 {
+  background-color: white;
+  padding: 10px;
+  border: solid black;
+  margin: 15px 0 0 12%; 
+  width: 800px;
+}
+
+#heading3-special-styling {
+  width: 300px;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+/*Set the max-width to 80%, this is so we can make the header and footer expand accross the site
+Then set the margin left and right to auto so we can center align the content*/
+main {
+  max-width: 80%;
+  margin: 2em auto;
+}
+
+footer {
+  background-color: lightblue;
+  min-height: 150px;
+  padding-top: 10px;
+}
+
+
+p::first-letter {
+  font-weight: bold;
+  text-decoration: underline;
+  color: darkblue;
+  font-family: serif;
+  font-size: 1.2em;
+}
+
+/*Pseudo Class Selectors for the a tags */
+
+a:hover {
+  background-color: white;
+  padding: 0 15px 0 15px;
+}
+
+#main__top-of-page--link:hover {
+  background-color: lightblue;
+}
+
+a:active {
+  border: solid black;
+  padding: 0 15px 0 15px;
+}
+
+.home-link {
+  margin-left: 11%;
+}
+
+.main-image {
+  width: 100px;
+  height: 100px;
+  margin-left: 16%;
+}
+
+
+.main__sections {
+  padding: 25px;
+}
+.stand-out-text {
+  padding-bottom: 20px;
+  font-style: italic;
+  color: darkblue;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  text-transform: lowercase;
+}
+
+/*When wanting the a link of top page to go all the way to the top,
+place the id="name of href link" in the html on the top of the page*/
+#main__top-of-page--link {
+  position: fixed;
+  top: 68%;
+  right: 2.5%;
+  color: black;
+}
+
+#main__top-of-page--link:link {
+  border: solid; 
+  padding: 10px;
+}
+
+.main__section--paragraph-styling {
+ padding-bottom: 40px;
+}
+
+#europe-link img {
+  width: 250px;
+  height: 258px;
+  padding: 0 0 30px 30px;
+  float: right;
+} 
+
+#today-link img {
+  width: 300px;
+  height: 258px;
+  float: left;
+  padding-right: 30px;
+}
+
+@media
