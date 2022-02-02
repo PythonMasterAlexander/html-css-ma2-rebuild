@@ -85,12 +85,12 @@ footer {
   margin-right: 20px;
 }
 
-.margin-bottom {
+.marginBottom {
   margin-bottom: 0px;
   height: 230px;
 }
 
-.main-image {
+.mainImage {
   display: block;
   float: none;
   height: 300px;
@@ -98,7 +98,7 @@ footer {
   width: 250px;
 }
 
-.strong, .stand-out-text {
+.strong, .standOutText {
   color: #FF2E00;
   font-style: italic;
   font-size: 19px;
