@@ -26,19 +26,30 @@ body {
   color: #000000;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
   font-family: 'Oswald', 'Arial', sans-serif;
 }
 
-p, a {
+h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+p, a, li {
+  color: #000;
   font-family: 'Open Sans', 'Arial', sans-serif;
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 
 a {
-    font-weight: 700;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
+nav a {
+  display: block;
+}
 
 img {
   float: right;
@@ -47,16 +58,10 @@ img {
 
 .mainImage {
   float: none;
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 200px;
+  max-width: 200px;
 }
 
-main {
-  background: #FFFAE3;
-  width: 90%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
 
 header {
   display: flex;
@@ -64,6 +69,13 @@ header {
   gap: 4rem;
   background: #F8F8FF;
   padding: 4rem 0;
+}
+
+main {
+  background: #FFFAE3;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 footer {
@@ -81,7 +93,7 @@ footer {
 }
 
 .strong, .standOutText {
-  color: #FF2E00;
+  color:  #5dade2;
   font-style: italic;
   font-weight: normal;
 }
@@ -92,4 +104,34 @@ a:hover {
 
 a:active {
   color: #00c;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.7rem;
+  }
+
+  .mainImage {
+    height: 100px;
+    width: 100px;
+  }
 }
