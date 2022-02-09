@@ -14,12 +14,16 @@ html {
 
 :root {
   font-size: 16px;
+  --colorBlack: #000;
+  --colorBlue: #5dade2;
 }
 
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
-  background: #ffffff;
-  color: #000000;
+  color: var(--colorBlack);
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1, h2 {
@@ -38,48 +42,54 @@ h2 {
   margin-bottom: 0.3rem;
 }
 
-p, a, li {
-  color: #000;
-  line-height: 1.5rem;
-}
-
 p {
   margin-bottom: 1.3rem;
 }
 
 a {
+  border-radius: 5px;
   text-decoration: none;
   font-size: 1.5rem;
+  display: block;
+  font-weight: 800;
+  margin: 10px 0;
+  width: fit-content;
 }
 
-nav a {
-  font-weight: 800;
-  display: block;
+li {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+p, a, li {
+  color: var(--colorBlack);
+  line-height: 1.5rem;
 }
 
 img {
   float: right;
-  max-width: 150px;
+  max-width: 250px;
+  padding-left: 15px;
 }
 
 .mainImage {
   float: none;
-  max-height: 200px;
   max-width: 200px;
 }
 
 
 header {
   display: flex;
-  justify-content: center;
   gap: 4rem;
-  background: #F8F8FF;
-  padding: 4rem 0;
+  min-height: 300px;
+  margin: 2rem auto;
 }
 
-main {
-  width: 90%;
-  max-width: 1280px;
+nav {
+  padding: 20px;
+}
+
+main, ul {
   margin: 0 auto;
 }
 
@@ -87,61 +97,73 @@ section {
   margin: 3rem 0;
 }
 
-footer {
-  background: #F8F8FF;
-  min-height: 100px;
-}
-
-.apply-extra-styling {
-  width: 300px;
-}
-
-.home-link {
-  background-color: #FFF000;
-  margin-right: 20px;
+ul {
+  list-style: square;
 }
 
 blockquote {
-  color:  #5dade2;
+  color: var(--colorBlue);
   font-style: italic;
   font-weight: normal;
   padding: 2rem 0;
+  max-width: 600px;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  color: #00c;
+  padding: 10px;
+  background-color: var(--colorBlue);
 }
 
 @media (max-width: 800px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
   h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   a {
     font-size: 1.5rem;
   }
+
+  img {
+    max-width: 200px;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 0;
+  }
 }
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 1rem;
+    text-decoration: none;
+    font-size: 1.8rem;
   }
 
-  a {
-    font-size: 0.7rem;
+  h2 {
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    float: none;
+    display: block;
+    max-width: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
   }
 
   .mainImage {
-    height: 100px;
-    width: 100px;
+  max-width: 150px;
   }
 }
