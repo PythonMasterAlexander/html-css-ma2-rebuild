@@ -16,12 +16,8 @@ html {
   font-size: 16px;
 }
 
-@font-face {
-  font-family: 'Oswald', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@400;700&display=swap');
-}
-
 body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
   background: #ffffff;
   color: #000000;
 }
@@ -33,29 +29,31 @@ h1, h2 {
 h1 {
   font-size: 3rem;
   text-decoration: underline;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
+  font-weight: 500;
   margin-bottom: 0.3rem;
 }
 
 p, a, li {
   color: #000;
-  font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 1.5rem;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 a {
-  font-weight: 700;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
 nav a {
+  font-weight: 800;
   display: block;
 }
 
@@ -80,11 +78,9 @@ header {
 }
 
 main {
-  background: #FFFAE3;
   width: 90%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 section {
